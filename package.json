@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -watch",
+    "dev": "ts-node ./src/index.ts",
+    "start": "nodemon index.js",
+    "prod": "npm run build && npm start"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.12.15",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
 }
